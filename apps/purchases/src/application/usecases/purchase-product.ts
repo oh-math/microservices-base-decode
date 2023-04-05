@@ -1,15 +1,10 @@
 import { Customer } from "../../domain/customer";
 import { Purchase } from "../../domain/purchase";
+import { PurchaseProductRequest } from "../../ts/interfaces/usecase.interface";
 import { MessagingAdapter } from "../adapters/messaging-adapter";
 import { CustomersRepository } from "../repositories/customers-repository";
 import { ProductsRepository } from "../repositories/products-repository";
 import { PurchasesRepository } from "../repositories/purchases-repository";
-
-interface PurchaseProductRequest {
-  name: string;
-  email: string;
-  productId: string;
-}
 
 export class PurchaseProduct {
   constructor(
