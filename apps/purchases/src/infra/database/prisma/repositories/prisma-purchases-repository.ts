@@ -4,13 +4,15 @@ import { prisma } from "../prisma";
 
 export class PrismaPurchasesRepository implements PurchasesRepository {
   async create(purchase: Purchase) {
+    const { id, createdAt, customerId, productId } = purchase;
+
     await prisma.purchase.create({
       data: {
-        id: purchase.id,
-        customerId: purchase.customerId,
-        productId: purchase.productId,
-        createdAt: purchase.createdAt,
-      }
-    })
+        id,
+        customerId,
+        productId,
+        createdAt,
+      },
+    });
   }
 }
