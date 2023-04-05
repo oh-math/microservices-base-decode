@@ -1,10 +1,6 @@
 import crypto from 'node:crypto';
+import { PurchaseProps } from '../ts/interfaces/domain.interfaces';
 
-interface PurchaseProps {
-  customerId: string;
-  productId: string; 
-  createdAt: Date;
-}
 
 export class Purchase {
   private _id: string;

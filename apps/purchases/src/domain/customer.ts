@@ -1,9 +1,5 @@
 import crypto from 'node:crypto';
-
-interface CustomerProps {
-  name: string;
-  email: string;
-}
+import { CustomerProps } from '../ts/interfaces/domain.interfaces';
 
 export class Customer {
   private _id: string;

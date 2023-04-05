@@ -1,8 +1,5 @@
 import crypto from 'node:crypto';
-
-interface ProductProps {
-  title: string;
-}
+import { ProductProps } from '../ts/interfaces/domain.interfaces';
 
 export class Product {
   private _id: string;
