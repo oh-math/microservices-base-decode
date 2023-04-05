@@ -2,11 +2,11 @@
   "name": "purchases",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/infra/http/index.js",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/infra/http/index.js",
-    "start:dev": "tsnd --respawn --transpile-only src/infra/http/index.ts",
+    "start": "node dist/app.js",
+    "start:dev": "tsnd --respawn --transpile-only src/app.ts",
     "build": "tsc"
   },
   "keywords": [],
